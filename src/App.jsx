@@ -22,7 +22,7 @@ function App() {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients.join(',')}&apiKey=902d1af53a1444f8b96b5575d68330a6`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients.join(',')}&apiKey=your_api_key_here`);
       const data = await response.json();
       setRecipes(data);
     } catch (e) {
@@ -32,7 +32,7 @@ function App() {
 
   const handleDescription = async (id) => {
     try {
-      const response = await fetch(`https://api.spoonacular.com/recipes/${id}/information?&apiKey=902d1af53a1444f8b96b5575d68330a6`);
+      const response = await fetch(`https://api.spoonacular.com/recipes/${id}/information?&apiKey=your_api_key_here`);
       const data = await response.json();
       setSelectedDescription({ 
         id, 
