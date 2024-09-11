@@ -1,3 +1,8 @@
+## Live Demo
+
+You can view the live application [here](https://recipeapp-react.onrender.com).
+
+
 # Recipe App
 
 ## Description
